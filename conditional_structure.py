@@ -10,6 +10,25 @@ if age >= 18:
 else:
     print("Vous êtes mineur.")
 
+bas = 12
+haut = 25
+bas_reel = 12.0
+
+# le réel 12 et 
+# l'entier 12 sont égaux
+if bas == bas_reel:
+    print('int == float')
+
+# pour int et complex
+if (12 + 0j) == 12:
+    print('int == complex')
+
+x = 20
+
+# deux tests en une expression
+if bas <= x <= haut:
+    print("dans l'intervalle")
+
 
 # Structure conditionnelle: if...elif...else
 

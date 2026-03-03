@@ -26,3 +26,11 @@ b = 10
 print(a == b)  # Égal à (True)
 print(a is b)  # Identique (True)
 
+# on peut comparer deux listes, mais ATTENTION
+print([1, 2] <= [2, 3])  # Inférieur ou égal à (True)
+
+# on ne peut pas par contre comparer deux nombres complexes
+try:
+    2j <= 3j
+except Exception as e:
+    print("OOPS", type(e), e)
