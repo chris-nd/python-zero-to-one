@@ -1,0 +1,10 @@
+Ligne 1 : Bienvenue dans ce fichier de test
+Ligne 2 : Python est un langage puissant
+Ligne 3 : Les fichiers sont importants en programmation
+Ligne 4 : Cette ligne contient du texte simple
+Ligne 5 : Nous sommes à la moitié du fichier
+Ligne 6 : Les boucles facilitent le traitement des fichiers
+Ligne 7 : L'encodage UTF-8 est très utilisé
+Ligne 8 : Presque à la fin maintenant
+Ligne 9 : Encore une ligne à lire
+Ligne 10 : C'est la dernière ligne du fichier

@@ -1,0 +1,10 @@
+Ceci est la première ligne du fichier.
+Voici la deuxième ligne avec du texte.
+Python est un langage de programmation.
+Les fichiers texte sont faciles à manipuler.
+Cette ligne contient des chiffres : 12345.
+Ligne numéro 6 du fichier de test.
+Apprendre Python est intéressant !
+Les boucles for sont très utiles.
+Les fonctions permettent de réutiliser du code.
+Ceci est la dernière ligne du fichier.

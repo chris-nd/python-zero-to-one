@@ -1,0 +1,10 @@
+Bonjour, ceci est un fichier source pour l'exercice 11.4.
+Ce fichier contient plusieurs lignes de texte intéressantes.
+Python permet de manipuler les fichiers facilement.
+Les opérations de lecture et écriture sont essentielles.
+Nous allons copier ce contenu dans un autre fichier.
+La gestion des fichiers est une compétence importante.
+Les fichiers texte peuvent contenir toutes sortes d'informations.
+L'encodage UTF-8 garantit la compatibilité des caractères accentués.
+Cette ligne contient des chiffres : 123456789.
+Dernière ligne du fichier source à copier !
