@@ -1,0 +1,6 @@
+Contenu initial du fichier pour l'exercice 11.5.
+Cette ligne existe déjà dans le fichier.
+Nous allons ajouter du texte à la fin de ce fichier.
+Le mode "append" permet d'ajouter sans écraser.
+Fin du contenu initial.
+Nouveau texte ajouté !

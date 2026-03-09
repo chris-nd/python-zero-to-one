@@ -1,0 +1,5 @@
+Contenu du premier fichier.
+Ce fichier contient quelques lignes de texte.
+Python est un excellent langage de programmation.
+Les fichiers peuvent être fusionnés facilement.
+Fin du premier fichier.

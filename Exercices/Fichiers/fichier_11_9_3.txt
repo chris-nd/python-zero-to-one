@@ -1,0 +1,5 @@
+Contenu du troisième et dernier fichier.
+Tous les fichiers seront combinés en un seul.
+L'exercice 11.9 teste la fusion de fichiers.
+Les trois fichiers formeront un fichier unique.
+Dernière ligne du troisième fichier.

@@ -1,0 +1,5 @@
+Début du deuxième fichier.
+Voici du contenu différent pour tester la fusion.
+La manipulation de fichiers est importante.
+Ce fichier sera fusionné avec les autres.
+Fin du deuxième fichier.

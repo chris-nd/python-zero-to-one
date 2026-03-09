@@ -1,0 +1,10 @@
+Python est un langage de programmation très populaire et puissant.
+Les fichiers permettent de stocker des données de manière permanente.
+La manipulation de fichiers est une compétence essentielle en programmation.
+Chaque phrase de ce fichier contient plusieurs mots à compter.
+L'encodage UTF-8 est le standard pour les fichiers texte modernes.
+Les boucles facilitent le traitement ligne par ligne des fichiers.
+Un mot est généralement séparé par des espaces ou de la ponctuation.
+Ce fichier de test contient exactement dix phrases complètes.
+Les fonctions rendent le code réutilisable et plus organisé.
+Voici la dernière phrase de ce fichier de test pour l'exercice.

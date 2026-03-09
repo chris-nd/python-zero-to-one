@@ -1,0 +1,15 @@
+Contenu du premier fichier.
+Ce fichier contient quelques lignes de texte.
+Python est un excellent langage de programmation.
+Les fichiers peuvent être fusionnés facilement.
+Fin du premier fichier.
+Début du deuxième fichier.
+Voici du contenu différent pour tester la fusion.
+La manipulation de fichiers est importante.
+Ce fichier sera fusionné avec les autres.
+Fin du deuxième fichier.
+Contenu du troisième et dernier fichier.
+Tous les fichiers seront combinés en un seul.
+L'exercice 11.9 teste la fusion de fichiers.
+Les trois fichiers formeront un fichier unique.
+Dernière ligne du troisième fichier.
