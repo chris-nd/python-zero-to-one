@@ -594,528 +594,528 @@ Créez un programme qui fusionne plusieurs fichiers en un seul.
 
 ---
 
-## 1. Boucle while
+## 12. Boucle while
 
-**Exercice 1.1 (Facile)**
+**Exercice 12.1 (Facile)**
 Créez un programme qui demande à l'utilisateur d'entrer un nombre et continue à demander jusqu'à ce qu'il entre un nombre positif.
 - Données de test : -5, -2, 0, -10, 7
 
-**Exercice 1.2 (Facile)**
+**Exercice 12.2 (Facile)**
 Écrivez un programme qui affiche les nombres de 1 à 10 en utilisant une boucle while.
 - Données de test : aucune
 
-**Exercice 1.3 (Facile)**
+**Exercice 12.3 (Facile)**
 Créez un programme qui calcule la somme des nombres de 1 à n en utilisant while.
 - Données de test : n = 100
 
-**Exercice 1.4 (Moyen)**
+**Exercice 12.4 (Moyen)**
 Écrivez un jeu de devinette : le programme choisit un nombre aléatoire entre 1 et 100, l'utilisateur doit le deviner. Le programme indique "trop grand" ou "trop petit".
 - Données de test : nombre secret = 42
 
-**Exercice 1.5 (Moyen)**
+**Exercice 12.5 (Moyen)**
 Créez un programme qui demande un mot de passe et ne laisse passer que si le bon mot de passe est entré (maximum 3 tentatives).
 - Données de test : mot de passe = "Python123"
 
-**Exercice 1.6 (Moyen)**
+**Exercice 12.6 (Moyen)**
 Écrivez un programme qui affiche tous les diviseurs d'un nombre en utilisant while.
 - Données de test : 24, 36, 100
 
-**Exercice 1.7 (Moyen)**
+**Exercice 12.7 (Moyen)**
 Créez un programme qui inverse les chiffres d'un nombre en utilisant while.
 - Données de test : 12345, 9876, 100
 
-**Exercice 1.8 (Difficile)**
+**Exercice 12.8 (Difficile)**
 Écrivez un programme qui trouve le plus grand commun diviseur de deux nombres en utilisant l'algorithme d'Euclide avec while.
 - Données de test : (48, 18), (100, 35)
 
-**Exercice 1.9 (Difficile)**
+**Exercice 12.9 (Difficile)**
 Créez un programme qui simule un distributeur automatique : l'utilisateur peut acheter des produits jusqu'à ce qu'il n'ait plus d'argent ou choisisse de quitter.
 - Données de test : solde initial = 10€, produits à 1.50€, 2€, 3€
 
-**Exercice 1.10 (Difficile)**
+**Exercice 12.10 (Difficile)**
 Écrivez un programme qui génère la suite de Collatz pour un nombre donné en utilisant while.
 - Données de test : 27, 10, 100
 
 ---
 
-## 2. match - case
+## 13. match - case
 
-**Exercice 2.1 (Facile)**
+**Exercice 13.1 (Facile)**
 Créez un programme qui prend un jour de la semaine (1-7) et affiche son nom en utilisant match-case.
 - Données de test : 1, 4, 7, 8
 
-**Exercice 2.2 (Facile)**
+**Exercice 13.2 (Facile)**
 Écrivez un calculateur simple qui prend deux nombres et un opérateur (+, -, *, /) et utilise match-case pour effectuer l'opération.
 - Données de test : (10, 5, "+"), (20, 4, "*"), (15, 3, "/")
 
-**Exercice 2.3 (Facile)**
+**Exercice 13.3 (Facile)**
 Créez un convertisseur de notes (A, B, C, D, F) en pourcentages en utilisant match-case.
 - Données de test : "A", "B", "C", "D", "F", "Z"
 
-**Exercice 2.4 (Moyen)**
+**Exercice 13.4 (Moyen)**
 Écrivez un programme qui classe un âge en catégorie (enfant, adolescent, adulte, senior) en utilisant match-case avec guards.
 - Données de test : 5, 15, 30, 70
 
-**Exercice 2.5 (Moyen)**
+**Exercice 13.5 (Moyen)**
 Créez un menu de restaurant interactif avec match-case qui affiche le prix selon le choix.
 - Données de test : "pizza", "burger", "salade", "dessert"
 
-**Exercice 2.6 (Moyen)**
+**Exercice 13.6 (Moyen)**
 Écrivez un programme qui identifie le type de triangle (équilatéral, isocèle, scalène) selon trois longueurs en utilisant match-case avec patterns.
 - Données de test : (5, 5, 5), (5, 5, 3), (3, 4, 5)
 
-**Exercice 2.7 (Moyen)**
+**Exercice 13.7 (Moyen)**
 Créez un interpréteur de commandes simple avec match-case (help, quit, list, clear).
 - Données de test : "help", "quit", "list", "invalid"
 
-**Exercice 2.8 (Difficile)**
+**Exercice 13.8 (Difficile)**
 Écrivez un programme qui analyse une structure de données (liste, tuple, dict) et effectue différentes actions selon le type et le contenu en utilisant match-case avec pattern matching.
 - Données de test : [1, 2], (1, 2), {"a": 1}, [1, 2, 3, 4, 5]
 
-**Exercice 2.9 (Difficile)**
+**Exercice 13.9 (Difficile)**
 Créez un système de gestion d'états avec match-case (nouveau, en cours, terminé, annulé) avec transitions valides.
 - Données de test : transitions de "nouveau" vers "en cours", "en cours" vers "terminé"
 
-**Exercice 2.10 (Difficile)**
+**Exercice 13.10 (Difficile)**
 Écrivez un parser simple d'expressions mathématiques qui utilise match-case pour évaluer des tuples représentant des opérations.
 - Données de test : ("+", 5, 3), ("*", ("+", 2, 3), 4)
 
 ---
 
-## 3. Les dictionnaires
+## 14. Les dictionnaires
 
-**Exercice 3.1 (Facile)**
+**Exercice 14.1 (Facile)**
 Créez un dictionnaire représentant un étudiant avec nom, âge et notes, puis affichez toutes les informations.
 - Données de test : {"nom": "Alice", "age": 20, "notes": [15, 17, 14]}
 
-**Exercice 3.2 (Facile)**
+**Exercice 14.2 (Facile)**
 Écrivez un programme qui compte la fréquence de chaque caractère dans une chaîne en utilisant un dictionnaire.
 - Données de test : "hello", "programming"
 
-**Exercice 3.3 (Facile)**
+**Exercice 14.3 (Facile)**
 Créez un programme qui fusionne deux dictionnaires.
 - Données de test : {"a": 1, "b": 2}, {"c": 3, "d": 4}
 
-**Exercice 3.4 (Moyen)**
+**Exercice 14.4 (Moyen)**
 Écrivez un programme qui inverse un dictionnaire (clés deviennent valeurs et vice-versa).
 - Données de test : {"a": 1, "b": 2, "c": 3}
 
-**Exercice 3.5 (Moyen)**
+**Exercice 14.5 (Moyen)**
 Créez un carnet d'adresses permettant d'ajouter, rechercher et supprimer des contacts.
 - Données de test : ajouter 3 contacts, rechercher un contact, supprimer un contact
 
-**Exercice 3.6 (Moyen)**
+**Exercice 14.6 (Moyen)**
 Écrivez un programme qui groupe des étudiants par note (dictionnaire de listes).
 - Données de test : [("Alice", 15), ("Bob", 12), ("Charlie", 15), ("David", 18)]
 
-**Exercice 3.7 (Moyen)**
+**Exercice 14.7 (Moyen)**
 Créez un programme qui trouve les clés communes entre deux dictionnaires.
 - Données de test : {"a": 1, "b": 2, "c": 3}, {"b": 5, "c": 6, "d": 7}
 
-**Exercice 3.8 (Difficile)**
+**Exercice 14.8 (Difficile)**
 Écrivez un programme qui aplatit un dictionnaire imbriqué (nested dict) en un dictionnaire à un seul niveau avec des clés composées.
 - Données de test : {"a": {"b": 1, "c": 2}, "d": 3}
 
-**Exercice 3.9 (Difficile)**
+**Exercice 14.9 (Difficile)**
 Créez un système de cache simple avec un dictionnaire qui stocke les résultats de calculs coûteux.
 - Données de test : calculer des factorielles et les mettre en cache
 
-**Exercice 3.10 (Difficile)**
+**Exercice 14.10 (Difficile)**
 Écrivez un programme qui trouve toutes les anagrammes dans une liste de mots en utilisant un dictionnaire.
 - Données de test : ["listen", "silent", "enlist", "hello", "world"]
 
 ---
 
-## 4. Les ensembles (sets)
+## 15. Les ensembles (sets)
 
-**Exercice 4.1 (Facile)**
+**Exercice 15.1 (Facile)**
 Créez un programme qui supprime les doublons d'une liste en utilisant un ensemble.
 - Données de test : [1, 2, 2, 3, 4, 3, 5, 1]
 
-**Exercice 4.2 (Facile)**
+**Exercice 15.2 (Facile)**
 Écrivez un programme qui vérifie si un élément existe dans un ensemble.
 - Données de test : ensemble = {1, 2, 3, 4, 5}, chercher 3 et 7
 
-**Exercice 4.3 (Facile)**
+**Exercice 15.3 (Facile)**
 Créez un programme qui trouve l'union de deux ensembles.
 - Données de test : {1, 2, 3}, {3, 4, 5}
 
-**Exercice 4.4 (Moyen)**
+**Exercice 15.4 (Moyen)**
 Écrivez un programme qui trouve l'intersection de deux ensembles.
 - Données de test : {1, 2, 3, 4}, {3, 4, 5, 6}
 
-**Exercice 4.5 (Moyen)**
+**Exercice 15.5 (Moyen)**
 Créez un programme qui trouve la différence entre deux ensembles (éléments dans A mais pas dans B).
 - Données de test : {1, 2, 3, 4, 5}, {4, 5, 6, 7}
 
-**Exercice 4.6 (Moyen)**
+**Exercice 15.6 (Moyen)**
 Écrivez un programme qui trouve la différence symétrique (éléments dans A ou B mais pas dans les deux).
 - Données de test : {1, 2, 3}, {3, 4, 5}
 
-**Exercice 4.7 (Moyen)**
+**Exercice 15.7 (Moyen)**
 Créez un programme qui vérifie si un ensemble est un sous-ensemble d'un autre.
 - Données de test : {1, 2} et {1, 2, 3, 4}, {1, 5} et {1, 2, 3, 4}
 
-**Exercice 4.8 (Difficile)**
+**Exercice 15.8 (Difficile)**
 Écrivez un programme qui trouve tous les caractères uniques communs à plusieurs chaînes.
 - Données de test : ["hello", "world", "python"]
 
-**Exercice 4.9 (Difficile)**
+**Exercice 15.9 (Difficile)**
 Créez un programme qui identifie les éléments présents dans exactement k ensembles parmi n ensembles donnés.
 - Données de test : [{1, 2, 3}, {2, 3, 4}, {3, 4, 5}], k = 2
 
-**Exercice 4.10 (Difficile)**
+**Exercice 15.10 (Difficile)**
 Écrivez un programme qui vérifie si plusieurs ensembles sont mutuellement disjoints (aucun élément commun entre eux).
 - Données de test : [{1, 2}, {3, 4}, {5, 6}], [{1, 2}, {2, 3}, {4, 5}]
 
 ---
 
-## 5. Les tuples
+## 16. Les tuples
 
-**Exercice 5.1 (Facile)**
+**Exercice 16.1 (Facile)**
 Créez un programme qui échange deux variables en utilisant un tuple.
 - Données de test : a = 5, b = 10
 
-**Exercice 5.2 (Facile)**
+**Exercice 16.2 (Facile)**
 Écrivez un programme qui retourne plusieurs valeurs d'une fonction en utilisant un tuple.
 - Données de test : calculer min, max et moyenne d'une liste
 
-**Exercice 5.3 (Facile)**
+**Exercice 16.3 (Facile)**
 Créez un programme qui compte les occurrences d'un élément dans un tuple.
 - Données de test : (1, 2, 3, 2, 4, 2, 5), chercher 2
 
-**Exercice 5.4 (Moyen)**
+**Exercice 16.4 (Moyen)**
 Écrivez un programme qui trouve l'indice d'un élément dans un tuple.
 - Données de test : (10, 20, 30, 40, 50), chercher 30
 
-**Exercice 5.5 (Moyen)**
+**Exercice 16.5 (Moyen)**
 Créez un programme qui concatène plusieurs tuples.
 - Données de test : (1, 2), (3, 4), (5, 6)
 
-**Exercice 5.6 (Moyen)**
+**Exercice 16.6 (Moyen)**
 Écrivez un programme qui convertit une liste de tuples en dictionnaire.
 - Données de test : [("a", 1), ("b", 2), ("c", 3)]
 
-**Exercice 5.7 (Moyen)**
+**Exercice 16.7 (Moyen)**
 Créez un programme qui trie une liste de tuples selon le deuxième élément.
 - Données de test : [("Alice", 25), ("Bob", 20), ("Charlie", 30)]
 
-**Exercice 5.8 (Difficile)**
+**Exercice 16.8 (Difficile)**
 Écrivez un programme qui dépaquette (unpacks) un tuple imbriqué.
 - Données de test : (1, (2, 3), (4, (5, 6)))
 
-**Exercice 5.9 (Difficile)**
+**Exercice 16.9 (Difficile)**
 Créez un programme qui utilise des tuples nommés (namedtuple) pour représenter des points en 2D et calculer la distance entre eux.
 - Données de test : Point(0, 0) et Point(3, 4)
 
-**Exercice 5.10 (Difficile)**
+**Exercice 16.10 (Difficile)**
 Écrivez un programme qui compresse deux listes en une liste de tuples en utilisant zip().
 - Données de test : [1, 2, 3], ["a", "b", "c"]
 
 ---
 
-## 6. Les exceptions
+## 17. Les exceptions
 
-**Exercice 6.1 (Facile)**
+**Exercice 17.1 (Facile)**
 Créez un programme qui gère une division par zéro avec try/except.
 - Données de test : 10/0, 10/2
 
-**Exercice 6.2 (Facile)**
+**Exercice 17.2 (Facile)**
 Écrivez un programme qui gère la conversion d'une chaîne en entier avec gestion d'erreur.
 - Données de test : "123", "abc", "45.5"
 
-**Exercice 6.3 (Facile)**
+**Exercice 17.3 (Facile)**
 Créez un programme qui gère l'accès à un indice invalide dans une liste.
 - Données de test : liste = [1, 2, 3], indices 1 et 10
 
-**Exercice 6.4 (Moyen)**
+**Exercice 17.4 (Moyen)**
 Écrivez un programme qui gère plusieurs types d'exceptions différemment (ValueError, TypeError, IndexError).
 - Données de test : diverses opérations qui peuvent lever ces exceptions
 
-**Exercice 6.5 (Moyen)**
+**Exercice 17.5 (Moyen)**
 Créez un programme qui utilise finally pour garantir la fermeture d'une ressource.
 - Données de test : ouvrir un fichier, lire son contenu, garantir sa fermeture
 
-**Exercice 6.6 (Moyen)**
+**Exercice 17.6 (Moyen)**
 Écrivez un programme qui lève une exception personnalisée quand une valeur est hors limites.
 - Données de test : valeurs entre 1 et 100, tester avec 50, 150, -10
 
-**Exercice 6.7 (Moyen)**
+**Exercice 17.7 (Moyen)**
 Créez un programme qui utilise else avec try/except pour exécuter du code seulement si aucune exception n'est levée.
 - Données de test : diverses opérations
 
-**Exercice 6.8 (Difficile)**
+**Exercice 17.8 (Difficile)**
 Écrivez un décorateur qui capture et log toutes les exceptions d'une fonction.
 - Données de test : fonction qui peut réussir ou échouer
 
-**Exercice 6.9 (Difficile)**
+**Exercice 17.9 (Difficile)**
 Créez une hiérarchie d'exceptions personnalisées pour un système de validation (ValidationError, avec sous-classes RangeError, FormatError).
 - Données de test : valider différents types d'entrées
 
-**Exercice 6.10 (Difficile)**
+**Exercice 17.10 (Difficile)**
 Écrivez un gestionnaire de contexte personnalisé (context manager) avec __enter__ et __exit__ pour gérer des ressources.
 - Données de test : créer un gestionnaire pour mesurer le temps d'exécution
 
 ---
 
-## 7. Type hints et isinstance
+## 18. Type hints et isinstance
 
-**Exercice 7.1 (Facile)**
+**Exercice 18.1 (Facile)**
 Créez une fonction avec type hints qui prend deux entiers et retourne leur somme.
 - Données de test : (5, 3), (10, 20)
 
-**Exercice 7.2 (Facile)**
+**Exercice 18.2 (Facile)**
 Écrivez une fonction avec type hints qui prend une liste de nombres et retourne leur moyenne.
 - Données de test : [1, 2, 3, 4, 5], [10, 20, 30]
 
-**Exercice 7.3 (Facile)**
+**Exercice 18.3 (Facile)**
 Créez une fonction qui utilise isinstance() pour vérifier si un argument est une chaîne ou un nombre.
 - Données de test : "hello", 42, 3.14, [1, 2, 3]
 
-**Exercice 7.4 (Moyen)**
+**Exercice 18.4 (Moyen)**
 Écrivez une fonction avec type hints pour un dictionnaire et vérifiez les types des valeurs avec isinstance().
 - Données de test : {"nom": "Alice", "age": 25, "notes": [15, 17]}
 
-**Exercice 7.5 (Moyen)**
+**Exercice 18.5 (Moyen)**
 Créez une fonction générique avec type hints qui accepte une liste de n'importe quel type et retourne le premier élément.
 - Données de test : [1, 2, 3], ["a", "b", "c"]
 
-**Exercice 7.6 (Moyen)**
+**Exercice 18.6 (Moyen)**
 Écrivez une fonction avec type hints Optional pour gérer les valeurs None.
 - Données de test : chercher un élément qui peut exister ou non
 
-**Exercice 7.7 (Moyen)**
+**Exercice 18.7 (Moyen)**
 Créez une fonction qui utilise isinstance() pour traiter différemment les listes, tuples et ensembles.
 - Données de test : [1, 2, 3], (1, 2, 3), {1, 2, 3}
 
-**Exercice 7.8 (Difficile)**
+**Exercice 18.8 (Difficile)**
 Écrivez une fonction avec type hints Union qui accepte soit un int soit un str et retourne une str.
 - Données de test : 42, "hello"
 
-**Exercice 7.9 (Difficile)**
+**Exercice 18.9 (Difficile)**
 Créez une fonction avec type hints pour des fonctions callback (Callable).
 - Données de test : passer différentes fonctions comme arguments
 
-**Exercice 7.10 (Difficile)**
+**Exercice 18.10 (Difficile)**
 Écrivez une fonction générique avec TypeVar qui fonctionne avec n'importe quel type tout en préservant le type.
 - Données de test : listes de différents types
 
 ---
 
-## 8. Les classes (introduction)
+## 19. Les classes (introduction)
 
-**Exercice 8.1 (Facile)**
+**Exercice 19.1 (Facile)**
 Créez une classe Point avec des attributs x et y, et une méthode pour afficher les coordonnées.
 - Données de test : Point(3, 4)
 
-**Exercice 8.2 (Facile)**
+**Exercice 19.2 (Facile)**
 Écrivez une classe Rectangle avec largeur et hauteur, et une méthode pour calculer l'aire.
 - Données de test : Rectangle(5, 3)
 
-**Exercice 8.3 (Facile)**
+**Exercice 19.3 (Facile)**
 Créez une classe Personne avec nom et âge, et une méthode pour se présenter.
 - Données de test : Personne("Alice", 25)
 
-**Exercice 8.4 (Moyen)**
+**Exercice 19.4 (Moyen)**
 Écrivez une classe CompteBancaire avec méthodes dépôt, retrait et consultation du solde.
 - Données de test : solde initial 100, dépôt 50, retrait 30
 
-**Exercice 8.5 (Moyen)**
+**Exercice 19.5 (Moyen)**
 Créez une classe Voiture avec marque, modèle, année et une méthode pour calculer l'âge.
 - Données de test : Voiture("Toyota", "Corolla", 2015)
 
-**Exercice 8.6 (Moyen)**
+**Exercice 19.6 (Moyen)**
 Écrivez une classe Étudiant qui hérite de Personne et ajoute un attribut notes.
 - Données de test : Étudiant("Bob", 20, [15, 17, 14])
 
-**Exercice 8.7 (Moyen)**
+**Exercice 19.7 (Moyen)**
 Créez une classe Cercle avec rayon et des méthodes pour calculer l'aire et le périmètre.
 - Données de test : Cercle(5)
 
-**Exercice 8.8 (Difficile)**
+**Exercice 19.8 (Difficile)**
 Écrivez une classe Stack (pile) avec méthodes push, pop, peek et is_empty.
 - Données de test : push(1), push(2), pop(), peek()
 
-**Exercice 8.9 (Difficile)**
+**Exercice 19.9 (Difficile)**
 Créez une classe File (queue) avec méthodes enqueue, dequeue et size.
 - Données de test : enqueue(1), enqueue(2), dequeue()
 
-**Exercice 8.10 (Difficile)**
+**Exercice 19.10 (Difficile)**
 Écrivez une classe avec des méthodes spéciales __str__, __repr__, __len__, __getitem__.
 - Données de test : créer une classe personnalisée et utiliser ces méthodes
 
 ---
 
-## 9. Portée des variables (LEGB)
+## 20. Portée des variables (LEGB)
 
-**Exercice 9.1 (Facile)**
+**Exercice 20.1 (Facile)**
 Créez un programme qui démontre la différence entre variable locale et globale.
 - Données de test : modifier une variable dans une fonction
 
-**Exercice 9.2 (Facile)**
+**Exercice 20.2 (Facile)**
 Écrivez un programme qui utilise le mot-clé global pour modifier une variable globale.
 - Données de test : compteur global incrémenté par une fonction
 
-**Exercice 9.3 (Facile)**
+**Exercice 20.3 (Facile)**
 Créez une fonction imbriquée et démontrez la portée enclosing.
 - Données de test : variable dans fonction externe accessible par fonction interne
 
-**Exercice 9.4 (Moyen)**
+**Exercice 20.4 (Moyen)**
 Écrivez un programme qui utilise nonlocal pour modifier une variable de la fonction englobante.
 - Données de test : compteur dans fonction externe modifié par fonction interne
 
-**Exercice 9.5 (Moyen)**
+**Exercice 20.5 (Moyen)**
 Créez un programme qui démontre l'ordre de recherche LEGB.
 - Données de test : même nom de variable à différents niveaux
 
-**Exercice 9.6 (Moyen)**
+**Exercice 20.6 (Moyen)**
 Écrivez une closure qui capture et modifie une variable de la fonction englobante.
 - Données de test : créer un compteur avec closure
 
-**Exercice 9.7 (Moyen)**
+**Exercice 20.7 (Moyen)**
 Créez un programme qui utilise des variables built-in et évite de les masquer.
 - Données de test : utiliser len, sum sans les écraser
 
-**Exercice 9.8 (Difficile)**
+**Exercice 20.8 (Difficile)**
 Écrivez un décorateur qui utilise des variables nonlocal pour compter le nombre d'appels.
 - Données de test : fonction décorée appelée plusieurs fois
 
-**Exercice 9.9 (Difficile)**
+**Exercice 20.9 (Difficile)**
 Créez un générateur de fonctions qui utilisent des closures pour capturer différentes valeurs.
 - Données de test : créer plusieurs fonctions avec différents comportements
 
-**Exercice 9.10 (Difficile)**
+**Exercice 20.10 (Difficile)**
 Écrivez un programme qui démontre les pièges de la portée avec les lambdas dans une boucle.
 - Données de test : créer des lambdas dans une boucle et les appeler
 
 ---
 
-## 10. Affectation simultanée et références partagées
+## 21. Affectation simultanée et références partagées
 
-**Exercice 10.1 (Facile)**
+**Exercice 21.1 (Facile)**
 Créez un programme qui échange trois variables en une seule ligne.
 - Données de test : a=1, b=2, c=3
 
-**Exercice 10.2 (Facile)**
+**Exercice 21.2 (Facile)**
 Écrivez un programme qui démontre l'affectation multiple.
 - Données de test : x = y = z = 0
 
-**Exercice 10.3 (Facile)**
+**Exercice 21.3 (Facile)**
 Créez un programme qui dépaquette une liste en plusieurs variables.
 - Données de test : [1, 2, 3, 4, 5]
 
-**Exercice 10.4 (Moyen)**
+**Exercice 21.4 (Moyen)**
 Écrivez un programme qui démontre la différence entre = et copy() pour les listes.
 - Données de test : liste1 = [1, 2, 3]
 
-**Exercice 10.5 (Moyen)**
+**Exercice 21.5 (Moyen)**
 Créez un programme qui démontre le problème des références partagées avec des listes imbriquées.
 - Données de test : matrice = [[0] * 3] * 3
 
-**Exercice 10.6 (Moyen)**
+**Exercice 21.6 (Moyen)**
 Écrivez un programme qui utilise deepcopy pour copier des structures imbriquées.
 - Données de test : liste de listes ou dictionnaire de listes
 
-**Exercice 10.7 (Moyen)**
+**Exercice 21.7 (Moyen)**
 Créez un programme qui utilise l'opérateur walrus := dans une boucle while.
 - Données de test : lire des entrées jusqu'à condition
 
-**Exercice 10.8 (Difficile)**
+**Exercice 21.8 (Difficile)**
 Écrivez un programme qui démontre les références partagées avec des objets mutables comme valeurs par défaut de fonction.
 - Données de test : fonction avec liste comme valeur par défaut
 
-**Exercice 10.9 (Difficile)**
+**Exercice 21.9 (Difficile)**
 Créez un programme qui utilise l'affectation étendue avec * pour capturer plusieurs valeurs.
 - Données de test : first, *middle, last = [1, 2, 3, 4, 5]
 
-**Exercice 10.10 (Difficile)**
+**Exercice 21.10 (Difficile)**
 Écrivez un programme qui démontre et résout le problème des références circulaires.
 - Données de test : deux objets qui se référencent mutuellement
 
 ---
 
-## 11. Expressions et instructions if / Opérateurs booléens
+## 22. Expressions et instructions if / Opérateurs booléens
 
-**Exercice 11.1 (Facile)**
+**Exercice 22.1 (Facile)**
 Créez un programme qui utilise l'opérateur ternaire (if-else en une ligne).
 - Données de test : déterminer si un nombre est pair
 
-**Exercice 11.2 (Facile)**
+**Exercice 22.2 (Facile)**
 Écrivez un programme qui utilise les opérateurs and, or, not.
 - Données de test : vérifier plusieurs conditions
 
-**Exercice 11.3 (Facile)**
+**Exercice 22.3 (Facile)**
 Créez un programme qui utilise l'évaluation court-circuit (short-circuit).
 - Données de test : conditions qui s'arrêtent à la première False
 
-**Exercice 11.4 (Moyen)**
+**Exercice 22.4 (Moyen)**
 Écrivez un programme qui utilise all() et any() avec des itérables.
 - Données de test : listes de booléens
 
-**Exercice 11.5 (Moyen)**
+**Exercice 22.5 (Moyen)**
 Créez un programme qui vérifie si une valeur est dans un intervalle en utilisant des opérateurs chaînés.
 - Données de test : 1 <= x <= 10
 
-**Exercice 11.6 (Moyen)**
+**Exercice 22.6 (Moyen)**
 Écrivez un programme qui utilise l'opérateur in avec différentes structures de données.
 - Données de test : listes, tuples, sets, dicts, strings
 
-**Exercice 11.7 (Moyen)**
+**Exercice 22.7 (Moyen)**
 Créez un programme qui utilise l'opérateur is vs ==.
 - Données de test : comparer des objets et des valeurs
 
-**Exercice 11.8 (Difficile)**
+**Exercice 22.8 (Difficile)**
 Écrivez un programme qui implémente une logique complexe avec des opérateurs booléens imbriqués.
 - Données de test : système de validation avec plusieurs règles
 
-**Exercice 11.9 (Difficile)**
+**Exercice 22.9 (Difficile)**
 Créez un programme qui utilise des expressions booléennes pour le filtrage de données.
 - Données de test : filtrer une liste selon plusieurs critères
 
-**Exercice 11.10 (Difficile)**
+**Exercice 22.10 (Difficile)**
 Écrivez un programme qui démontre la différence entre bool(x) et x is True.
 - Données de test : différentes valeurs truthy et falsy
 
 ---
 
-## 12. Module builtins
+## 23. Module builtins
 
-**Exercice 12.1 (Facile)**
+**Exercice 23.1 (Facile)**
 Créez un programme qui liste toutes les fonctions built-in disponibles.
 - Données de test : dir(__builtins__)
 
-**Exercice 12.2 (Facile)**
+**Exercice 23.2 (Facile)**
 Écrivez un programme qui utilise map() pour transformer une liste.
 - Données de test : [1, 2, 3, 4, 5]
 
-**Exercice 12.3 (Facile)**
+**Exercice 23.3 (Facile)**
 Créez un programme qui utilise filter() pour filtrer une liste.
 - Données de test : filtrer les nombres pairs de [1, 2, 3, 4, 5, 6]
 
-**Exercice 12.4 (Moyen)**
+**Exercice 23.4 (Moyen)**
 Écrivez un programme qui utilise zip() pour combiner plusieurs listes.
 - Données de test : [1, 2, 3], ["a", "b", "c"], [True, False, True]
 
-**Exercice 12.5 (Moyen)**
+**Exercice 23.5 (Moyen)**
 Créez un programme qui utilise enumerate() avec un index de départ personnalisé.
 - Données de test : ["a", "b", "c"], start=1
 
-**Exercice 12.6 (Moyen)**
+**Exercice 23.6 (Moyen)**
 Écrivez un programme qui utilise sorted() avec une clé personnalisée.
 - Données de test : trier une liste de tuples selon le deuxième élément
 
-**Exercice 12.7 (Moyen)**
+**Exercice 23.7 (Moyen)**
 Créez un programme qui utilise reversed() sur différentes séquences.
 - Données de test : listes, tuples, strings
 
-**Exercice 12.8 (Difficile)**
+**Exercice 23.8 (Difficile)**
 Écrivez un programme qui combine map(), filter() et reduce().
 - Données de test : calculer la somme des carrés des nombres pairs
 
-**Exercice 12.9 (Difficile)**
+**Exercice 23.9 (Difficile)**
 Créez un programme qui utilise exec() et eval() de manière sécurisée.
 - Données de test : expressions mathématiques simples
 
-**Exercice 12.10 (Difficile)**
+**Exercice 23.10 (Difficile)**
 Écrivez un programme qui utilise vars() et dir() pour l'introspection d'objets.
 - Données de test : examiner les attributs d'une classe personnalisée
