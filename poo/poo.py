@@ -1,11 +1,16 @@
+"""
+Module d'apprentissage de la Programmation Orientée Objet
+"""
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, asdict, astuple
 
 # Les Classes
 class Chien:
+    "Classe pour la création d'un chien"
     name = "Milou"
 
     def aboyer(self):
+        "Faire aboyer un chien"
         print(f"Le chien {self.name} aboie")
 
 chien = Chien()
@@ -33,7 +38,7 @@ cours1 = Cours("Apprendre la POO avec Python", 1, 90)
 cours1.afficher_info()
 
 # Encapsulation
-cours1.etudiants = -50 # N'a pas de sens et cun contrôle d'accès aux données (états)
+cours1.etudiants = -50 # N'a pas de sens et aucun contrôle d'accès aux données (états)
 
 class CoursEncapsulation:
     "Classe d'assistance pour la gestion des cours"
@@ -55,6 +60,8 @@ class CoursEncapsulation:
         self.etudiants += 1
 
 cours2 = CoursEncapsulation("Apprendre la POO avec Python", 1, 90)
+print("_protege" in dir(cours2))
+print("__prive" in dir(cours2))
 print(cours2._protege)
 
 try:
