@@ -69,3 +69,40 @@ def return_with_else(number):
 
 print(return_with_else(1))
 print(return_with_else(0))
+
+def check_age(age):
+    if age < 0:
+        raise ValueError('Age ne peut pas être négatif')
+    return age
+
+try:
+    check_age(-5)
+except ValueError as e:
+    print(f'Error: {e}') # Error: Age ne peut pas être négatif
+
+
+def process_data(data):
+    try:
+        result = int(data)
+        return result * 2
+    except ValueError:
+        print('Logging: données invalides reçues')
+        raise  # Re-raises the same ValueError
+
+try:
+    process_data('abc')
+except ValueError:
+    print('Handled at higher level')
+
+
+def parse_config(filename):
+    try:
+        with open(filename, 'r') as file:
+            data = file.read()
+            return int(data)
+    except FileNotFoundError:
+        raise ValueError('Fichier de configuration manquant') from None
+    except ValueError as e:
+        raise ValueError('Format de configuration invalide') from e
+
+config = parse_config('config.txt')
