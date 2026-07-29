@@ -12,8 +12,12 @@ from argparse import ArgumentParser
 
 # chmod +x shebang.py: Permet de modifier le mode d'accès au fichier
 # et de lui attribuer les permissions d'exécution.
-# <path>/shebang.py <arg> : Pour exécuter le script avec un argument 
+# <path>/shebang.py <arg> : Pour exécuter le script avec un argument
 # passer en ligne de commande.
+
+# Pour ajouter le fichier comme exécutable à la variable d'environnement PATH,
+# il faut ajouter le répertoire contenant le fichier à la variable PATH
+# export PATH=<path>:$PATH
 
 
 def fibonacci(n):
