@@ -35,6 +35,7 @@ def changement_de_base(rep_a: str, a: int, b: int)-> str:
         >>> changement_de_base('10', 10, 2)
         '1010'
         >>> changement_de_base('A', 20, 8)
+        '12'
     """
 
     value = int(rep_a, a)
