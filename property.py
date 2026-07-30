@@ -1,4 +1,7 @@
+"Implémentation des properties"
+
 class Temperature1:
+    "Implémentation simple d'un type objet température1 en kelvin"
     def __init__(self, kelvin):
         self.kelvin = kelvin
 
@@ -13,18 +16,27 @@ print(t1.kelvin) # 20
 
 
 class Temperature2:
+    """ 
+    Implémentation d'un type objet température2 en kelvin 
+    avec contrôle d'accès à la valeur via des getters et setters 
+    """
+
+    # Définition de la fonction d'initialisation: "constructeur"
     def __init__(self, kelvin):
         self.set_kelvin(kelvin)
 
-
+    # Définition d'un mutateur: "setter"
     def set_kelvin(self, kelvin):
+        "Modifie la valeur de la température en kelvin"
         self._kelvin = max(0, kelvin)
 
 
+    # Défition d'un accesseur: "Getter"
     def get_kelvin(self):
+        "Renvoie la valeur de la température en kelvin"
         return self._kelvin
 
-
+    # Redéfinition de la repésentation des types objets temperature2
     def __repr__(self):
         return f"{self._kelvin}K"
 
@@ -34,12 +46,17 @@ print(t2) # 0K
 print(t2.get_kelvin()) # 0
 
 
+# Implémentation phytonique
 class Temperature3:
+    """
+    Implémentation d'un type objet température3 en kelvin avec 
+    contrôle d'accès à la valeur via des getters et setters privé 
+    """
     def __init__(self, kelvin):
         self.kelvin = kelvin
 
     # je définis bel et bien mes accesseurs de type getter et setter
-    # mais _get_kelvin commence avec un _ 
+    # mais _get_kelvin commence avec un _
     # car il n'est pas censé être appelé par l'extérieur
     def _get_kelvin(self):
         return self._kelvin
@@ -65,7 +82,10 @@ print(t3.kelvin) # 0
 
 
 class Temperature:
-
+    """
+    Implémentation d'un type objet température 
+    en kelvin avec un mécanisme de properties
+    """
     ## les constantes de conversion
     # kelvin / celsius
     K = 273.16
@@ -97,13 +117,15 @@ class Temperature:
     def __str__(self):
         return f"{self.kelvin:g}K"
 
-
-    # l'attribut 'kelvin' n'a pas de conversion à faire,
-    # mais il vérifie que la valeur est positive
+    # Getter
     def _get_kelvin(self):
         return self._kelvin
 
+    # Setter
+    # l'attribut 'kelvin' n'a pas de conversion à faire,
+    # mais il vérifie que la valeur est positive
     def _set_kelvin(self, kelvin):
+        # Validation de donnée
         if kelvin < 0:
             raise ValueError(f"Kelvin {kelvin} must be positive")
         self._kelvin = kelvin
@@ -112,7 +134,7 @@ class Temperature:
     kelvin = property(_get_kelvin, _set_kelvin)
 
 
-    # les deux autres properties font la conversion, puis 
+    # les deux autres properties font la conversion, puis
     # sous-traitent à la property kelvin pour le contrôle de borne
     def _set_celsius(self, celsius):
         # using .kelvin instead of ._kelvin to enforce
@@ -141,12 +163,12 @@ print(t) # <100K == 100℃ == 212F>
 
 try:
     t = Temperature(fahrenheit = -1000)
-except Exception as e:
+except ValueError as e:
     print(f"OOPS, {type(e)}, {e}")
 
 
 # comme on n'a pas défini de deleter, on ne peut pas faire ceci
 try:
     del t.kelvin
-except Exception as e:
+except ValueError as e:
     print(f"OOPS, {type(e)}, {e}")
