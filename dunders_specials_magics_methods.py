@@ -162,6 +162,9 @@ def __mul__(self, other):
 def __div__(self, other):
     pass
 
+def __truediv__(self, other):
+    pass
+
 # Certaines des méthodes dunders pour les bitwise
 
 def __or__(self, other):
