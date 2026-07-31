@@ -1,30 +1,37 @@
+"Implémentation du concept d'héritance en Python"
+
 class Animal:
+    "Implémentation d'un type objet animal"
     def __init__(self, name):
         self.name = name
 
+
+# Héritage simple
 class Mammifere(Animal):
+    "Implémentation d'un type objet mammifère"
     def __init__(self, name):
         Animal.__init__(self, name)
 
-# pour créer un objet de type `Animal` (méthode __init__)
+# Instenciation d'un objet `requin`` de type `Animal`
 requin = Animal('requin')
-# idem pour un Mammifere
+
+# Instenciation d'un objet `baleine`` de type `Mammifere`
 baleine = Mammifere('baleine')
 
-# bien sûr ici la réponse est 'True'
+# Test
 print("l'objet baleine est-il un mammifère ?", isinstance(baleine, Mammifere))
-
-# ici c'est moins évident, mais la réponse est 'True' aussi
 print("l'objet baleine est-il un animal ?", isinstance(baleine, Animal))
 
-# Méthodes spéciales (dunders)
 
 class Phrase:
+    "Implémentation d'un type objet phrase"
+
     def __init__(self, ma_phrase):
         self.ma_phrase = ma_phrase
         self.mots = ma_phrase.split()
 
     def nb_lettres(self):
+        "Renvoie le nombre de lettres dans la phrase"
         return len(self.ma_phrase)
 
     def __len__(self):
@@ -43,10 +50,16 @@ print("monde" in p) # True
 print(p) # Bonjour, le monde!
 
 
+# Héritage simple
 class PhraseSansCasse(Phrase):
+    "Implémentation d'un type objet phrase-sans-casse"
+
     def __init__(self, ma_phrase):
-        self.mots_lower = {mot.lower() for mot in ma_phrase.split()}
+        # soit comme ceci
         Phrase.__init__(self, ma_phrase)
+        # soit comme cela
+        # super().__init__(ma_phrase)
+        self.mots_lower = {mot.lower() for mot in ma_phrase.split()}
 
     def __contains__(self, mot):
         return mot.lower() in self.mots_lower
