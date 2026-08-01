@@ -1,12 +1,17 @@
+"Comprendre le module builtins"
+
 import builtins
 
-dir(builtins)
+print(dir(builtins))
 
-print(1)
+numb = 1
+
+print(numb)
 print = 10
-print(1)
-
-x = 1
+try:
+    print(1)
+except TypeError as e:
+    repr(e)
 
 print = builtins.print
-print(1)
+print(numb)
