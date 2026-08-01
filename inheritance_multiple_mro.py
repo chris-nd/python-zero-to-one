@@ -1,3 +1,5 @@
+import builtins
+
 class H:
     ...
 
@@ -7,7 +9,7 @@ h = H()
 # de l'objet ou de la classe qui a permi l'instanciation de l'objet
 print(h.__class__) # <class '__main__.H'>
 
-# La variable d'attribut spéciale __bases__ contient la liste des 
+# La variable d'attribut spéciale __bases__ contient la liste des
 # classes parentes ou classes de bases dans un tuple
 print(H.__bases__) # (<class 'object'>,)
 
@@ -61,7 +63,7 @@ class C(A): ...
 
 class D(B, C): ...
 
-# Exemple du fonctionnement de l'algorithme MRO
+# Exemple du fonctionnement de l'algorithme de `linéarisation` C3 de la MRO
 # D B A Object C A Object
 # D B Object C A Object
 # D B C A Object
@@ -72,3 +74,75 @@ print(D.mro())
 # <class '__main__.C'>,
 # <class '__main__.A'>,
 # <class 'object'>]
+
+class LeftTop:
+
+    def attribut(self):
+        return "attribut(LeftTop)"
+
+class LeftMiddle(LeftTop):
+    pass
+
+class Left(LeftMiddle):
+    pass
+
+class Middle:
+    pass
+
+class Right:
+    def attribut(self):
+        return "attribut(Right)"
+
+class Class(Left, Middle, Right):
+    pass
+
+instance = Class()
+
+print("\nLe nom de la classe de l'instance 'instance' est :", instance.__class__)
+print("\nLe nom de la classe 'Class' est :", Class.__name__)
+print("\nLes classes de base de la classe 'Class' sont :", Class.__bases__)
+print("\nLes classes de base de la classe parente de l'instance" \
+      " 'instance' sont :", instance.__class__.__bases__)
+
+# Class Left LeftMiddle LeftTop Object Middle Object Right Object
+# Class Left LeftMiddle LeftTop Middle Right Object
+
+print("\nL'ordre de résolution des méthodes est :", Class.mro(), "=>", instance.attribut())
+print(instance.attribut() == "attribut(LeftTop)")
+print(instance.attribut() == "attribut(Right)")
+
+# Pour court-circuité la résolution d'attribus via la mro
+class Class2(Left, Middle, Right):
+
+    def attribut(self):
+        return Right.attribut(self)
+
+instance2 = Class2()
+print(instance2.attribut())
+
+O = object
+class F1(O): pass
+class E1(O): pass
+class D1(O): pass
+class C1(D1, F1): pass
+class B1(E1, D1): pass
+class A1(B1, C1): pass
+
+print(A1.mro())
+
+# Cas où la linéarisation C3 de la mro ne fonctionne pas
+class X: pass
+class Y: pass
+class XY(X, Y): pass
+class YX(Y, X): pass
+
+# on essaie de créer une sous-classe de XY et YX
+try:
+    class Class3(XY, YX): pass 
+# mais ce n'est pas possible
+except Exception as e:
+    print(f"OOPS, {type(e)}, {e}")
+
+
+# La super classe object
+print("builtins.object == object:", builtins.object == object)
