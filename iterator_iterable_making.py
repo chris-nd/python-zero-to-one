@@ -71,8 +71,7 @@ class PhraseIterable2:
         self.mots = ma_phrase.split()
 
     def __iter__(self):
-        for m in self.mots:
-            yield m
+        yield from self.mots
 
 p3 = PhraseIterable2(s)
 print("\nL'objet p3 est itérable :", isinstance(p3, Iterable))
