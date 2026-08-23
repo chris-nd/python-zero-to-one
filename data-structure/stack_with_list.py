@@ -1,5 +1,7 @@
 "Structure de données - Pile"
 
+from typing import Any
+
 # Basé sur le principe du LIFO"
 
 # Les opérations de base
@@ -10,11 +12,10 @@
 # Size
 
 # Les piles peuvent être implémentées à l'aide de
-# tableaux ou de listes chaîneées.
+# tableaux ou de listes chaînées.
 
 # Les listes python peuvent se comporter comme des
-# des piles avec des méthodes comme: append(), pop(),
-# liste[-1], len(liste), bool(liste) == false
+# des piles avec des méthodes comme: append(), pop()
 
 
 class Stack:
@@ -31,12 +32,12 @@ class Stack:
 
     stack = property(_get_stack)
 
-    def push(self, item: any):
+    def push(self, item: Any):
         """
         Ajoute un élement à la pile.
 
         Args:
-            item (any): L'élément à ajouter au dessus de la pile
+            item (Any): L'élément à ajouter au dessus de la pile
         """
 
         if not isinstance(self.stack, list):
@@ -44,12 +45,12 @@ class Stack:
 
         self.stack.append(item)
 
-    def pop(self) -> any:
+    def pop(self) -> Any:
         """
         Retire et renvoie l'élément au dessus de la pile
 
         Returns:
-            any | int: L'élément renvoyé
+            Any | int: L'élément renvoyé
         """
 
         if self.isEmpty():
@@ -57,12 +58,12 @@ class Stack:
 
         return self.stack.pop()
 
-    def peek(self) -> any:
+    def peek(self) -> Any:
         """
         Renvoie l'élément au dessus de la pile
 
         Returns:
-            any: L'élément renvoyé
+            Any: L'élément renvoyé
         """
 
         if self.isEmpty():
@@ -94,8 +95,8 @@ class Stack:
 
         return f"{self.stack}"
 
-# Créer une stack (pile)
 
+# Créer une stack (pile)
 pile = Stack()
 pile.push(5)
 pile.push(1)
