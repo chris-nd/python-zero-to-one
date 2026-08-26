@@ -105,7 +105,7 @@ traverse(node1)
 # Insérer un noeud dans la liste chaînée
 def insert_node(head: Node, new_node: Node, position: int) -> Node:
     """
-    Insére un nouveau noeud à une liste chaînée
+    Insérer un nouveau noeud à une liste chaînée
 
     Args:
         head (Node): Noeud de tête
