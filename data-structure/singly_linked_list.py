@@ -64,3 +64,39 @@ def find_min_value(head: Node) -> Any:
     return min_value
 
 print("La valeur minimale dans la liste chaînée est:", find_min_value(node1))
+
+
+# Supprimer un noeud de la liste chaînée
+def remove_node(head: Node, node: Node) -> Node | None:
+    """
+    Supprimer un noeud de la liste chaînée
+
+    Args:
+        head (Node): Noeud de tête
+        node (Node): Noeud à supprimer
+
+    Returns:
+        node (Node | None): Un noeud de la liste
+    """
+
+    if head == node:
+        return head.next
+
+    current_node = head
+
+    while current_node.next and current_node.next != node:
+        current_node = current_node.next
+
+    if current_node.next is None:
+        return head
+
+    current_node.next = current_node.next.next
+
+    return head
+
+
+print("Avant suppression")
+traverse(node1)
+remove_node(node1, node4)
+print("Après suppression")
+traverse(node1)
