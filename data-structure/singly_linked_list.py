@@ -100,3 +100,53 @@ traverse(node1)
 remove_node(node1, node4)
 print("Après suppression")
 traverse(node1)
+
+
+# Insérer un noeud dans la liste chaînée
+def insert_node(head: Node, new_node: Node, position: int) -> Node:
+    """
+    Insére un nouveau noeud à une liste chaînée
+
+    Args:
+        head (Node): Noeud de tête
+        new_node (Node): Noeud à insérer
+        position (int): Postion de l'insertion
+
+    Returns:
+        Noeud inséré
+    """
+    if position == 1:
+        new_node.next = head
+        return new_node
+
+    current_node = head
+
+    for _ in range(position - 2):
+        if current_node.next is None:
+            break
+        current_node = current_node.next
+
+    new_node.next = current_node.next
+    current_node.next = new_node
+
+    return head
+
+
+node1 = Node(7)
+node2 = Node(3)
+node3 = Node(2)
+node4 = Node(9)
+
+node1.next = node2
+node2.next = node3
+node3.next = node4
+
+print("\nAvant insertion:")
+traverse(node1)
+
+# Inséer un nouveau noeud avec une valeur de 97 en position 2
+new_node = Node(97)
+node1 = insert_node(node1, new_node, 2)
+
+print("Après insertion:")
+traverse(node1)
