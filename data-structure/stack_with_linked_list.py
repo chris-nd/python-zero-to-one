@@ -67,6 +67,7 @@ class Stack:
             Le nombre d'éléments dans la pile.
         """
         return self.stack_size
+<<<<<<< HEAD
 
     def traverse(self):
         current_node = self.head
@@ -88,3 +89,5 @@ print("Liste chaînée après Pop: ", end="")
 my_stack.traverse()
 print("isEmpty: ", my_stack.isEmpty())
 print("Size: ", my_stack.size())
+=======
+>>>>>>> refs/remotes/origin/main
