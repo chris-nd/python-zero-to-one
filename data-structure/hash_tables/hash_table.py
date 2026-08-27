@@ -1,5 +1,5 @@
 """
-Structure de donnée: Hash Map
+Structure de donnée: Table de hachage
 
 - La fonction de hachage
 
@@ -46,3 +46,18 @@ print(my_list)
 print("'Bob' a un hash code (code de hashage) de:", hash_function('Bob'))
 print("'Chris' a un hash code (code de hashage) de:", hash_function('Chris'))
 
+
+def contains(value: str) -> bool:
+    """
+    Vérifie si un élément est présent dans la table de hashage
+
+    Args:
+        value (str): élément à rechercher
+
+    Returns:
+        True si l'élément est présent, False sinon
+    """
+    hash_code = hash_function(value)
+    return my_list[hash_code] == value
+
+print("'Pete' est dans la table hachage:", contains('Pete'))
