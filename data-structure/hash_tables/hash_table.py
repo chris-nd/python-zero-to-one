@@ -61,3 +61,30 @@ def contains(value: str) -> bool:
     return my_list[hash_code] == value
 
 print("'Pete' est dans la table hachage:", contains('Pete'))
+
+
+# Gestion des collisions
+
+# Une collision se produit lorsque deux éléments
+# de la table de hachage ont le même code de hachage,
+# car cela signifie qu'ils appartiennent au même compartiment
+
+my_list = [[] for _ in range(10)]
+
+def add_2(value: str) -> None:
+    """
+    Ajoute un élément à la table de hashage
+
+    Args:
+        value (str): élément à ajouter
+    """
+    index = hash_function(value)
+    my_list[index].append(value)
+
+add_2('Bob')
+add_2('Pete')
+add_2('Jones')
+add_2('Lisa')
+add_2('Siri')
+add_2('Stuart')
+print(my_list)
